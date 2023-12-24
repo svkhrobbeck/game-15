@@ -118,15 +118,27 @@ main {
   align-items: center;
 }
 
+.modal__content {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  max-width: 600px;
+  padding: 10px;
+}
+
 .modal.modal--hidden {
   display: none;
 }
 
 .modal__img {
-  max-width: 600px;
   width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+.modal__text {
+  margin: 0;
+  font-weight: 500;
 }
 
 .modal__button {
