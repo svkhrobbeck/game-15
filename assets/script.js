@@ -79,14 +79,8 @@ function onGameButtonChangeClick(e) {
   if (checkIsGameOver(shuffledArray)) {
     isGameOver = true;
     elGameTitle.textContent = "Qoyil, siz yutdingiz!";
+    elGameButtons.classList.add("game__buttons--game-over");
   }
-}
-
-function onStartNewGame() {
-  elGameTitle.textContent = "15 o'yini";
-  shuffledArray = shuffleArray(array);
-  shuffledArray[15] = 16;
-  renderButtons(shuffledArray);
 }
 
 // called
@@ -94,10 +88,12 @@ renderButtons(shuffledArray);
 
 // click events
 elGameButtons.addEventListener("click", onGameButtonChangeClick);
-elNewGame.addEventListener("click", onStartNewGame);
-elModalOpen.addEventListener("click", () =>
-  elModal.classList.remove("modal--hidden")
-);
-elModalClose.addEventListener("click", () =>
-  elModal.classList.add("modal--hidden")
-);
+elNewGame.addEventListener("click", () => location.reload());
+
+elModalOpen.addEventListener("click", () => {
+  elModal.classList.remove("modal--hidden");
+});
+
+elModalClose.addEventListener("click", () => {
+  elModal.classList.add("modal--hidden");
+});
