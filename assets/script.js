@@ -10,7 +10,7 @@ const elModal = document.getElementById("modal");
 const array = Array.from({ length: 15 }, (_, idx) => idx + 1);
 let isGameOver = false;
 
-let shuffledArray = shuffleArray(array);
+let shuffledArray = array;
 shuffledArray.push(16);
 
 // functions
