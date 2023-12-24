@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15 o'yini</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="game">
+        <!-- title -->
+        <h2 class="game__title" id="game-title">15 o'yini</h2>
+
+        <!-- buttons wrapper -->
+        <div class="game__buttons" id="game-buttons"></div>
+
+        <!-- buttons -->
+        <div class="game__start-rules-btns">
+          <button class="button game__newgame" id="new-game" type="button">
+            yangi o'yin
+          </button>
+          <button class="button open-modal-btn" id="modal-open" type="button">
+            qoidalar
+          </button>
+        </div>
+      </div>
+
+      <div class="modal modal--hidden" id="modal">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <img
+              class="modal__img"
+              src="assets/qanday_tartiblash_kerak.png"
+              width="600"
+              alt="qanday tartiblash kerak"
+            />
+          </div>
+          <button class="button modal__button" type="button" id="modal-close">
+            yopish
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
