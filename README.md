@@ -4,4 +4,4 @@ O'yinda yutish uchun, barcha raqamlarni 1-raqamdan to 15-raqamgacha ketma ketlik
 <br />
 O'ynash uchun sariq katak yonidagi raqamlarni bosasiz va raqamlar o'rnini alishtirasiz
 
-[link]("https://ss-game-15.netlify.app")
+[link](https://ss-game-15.netlify.app/)
