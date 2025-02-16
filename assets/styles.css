@@ -113,9 +113,15 @@ main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
+  padding: 30px 20px;
   justify-content: center;
-  padding: 20px;
   align-items: center;
+  overflow: auto;
+  height: 100%;
+}
+
+.modal__dialog {
+  height: 100%;
 }
 
 .modal__content {
